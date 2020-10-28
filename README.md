@@ -35,7 +35,7 @@
     🟢 Create a folder called model and inside create a filename with the name of the resource
     🟢 Inside of the resource model file, import mongoose, create an schema and then a Model
     🟢 Create an async function that deal with the read/write to database.
-    🟢 Repeat for all endpoints these steps
+    🟢 Repeat for all endpoints these steps.
 
 #### WIREFRAMES
 
