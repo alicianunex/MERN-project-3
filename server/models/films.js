@@ -6,6 +6,7 @@ const filmBody = new mongoose.Schema(
     year: String,
     director: String,
     awards: [String],
+    nominations: [String],
   },
   {
     timestamps: true,
