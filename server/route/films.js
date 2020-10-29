@@ -6,13 +6,13 @@ import {
   updateFilmById,
   deleteFilmById,
 } from '../controllers/films.js';
-// import {
-//   listDirector,
-//   getDirectorById,
-//   createDirector,
-//   updateDirectorById,
-//   deleteDirectorById,
-// } from '../controllers/films.js';
+import {
+  listDirector,
+  getDirectorsById,
+  createDirectors,
+  updateDirectorsById,
+  deleteDirectorsById,
+} from '../controllers/directors.js';
 
 const filmRouter = express.Router();
 
@@ -27,16 +27,16 @@ filmRouter.put('/film/:id', updateFilmById);
 // Delete
 filmRouter.delete('/film/:id', deleteFilmById);
 
-// //// Directors
-// // List of directors
-// filmRouter.get('/director', listDirector);
-// // List directors by id
-// filmRouter.get('/film/:id', getDirectorById);
-// // Create
-// filmRouter.post('/film', createDirector);
-// // Update
-// filmRouter.put('/film/:id', updateDirectorById);
-// // Delete
-// filmRouter.delete('/film/:id', deleteDirectorById);
+//// Directors
+// List of directors
+filmRouter.get('/director', listDirector);
+// List directors by id
+filmRouter.get('/director/:id', getDirectorsById);
+// Create
+filmRouter.post('/director', createDirectors);
+// Update
+filmRouter.put('/director/:id', updateDirectorsById);
+// Delete
+filmRouter.delete('/director/:id', deleteDirectorsById);
 
 export default filmRouter;

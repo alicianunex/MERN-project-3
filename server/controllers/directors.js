@@ -1,15 +1,15 @@
 import {
-  getAllFilm,
-  getFilmResourceById,
-  createFilmResource,
-  updateFilmResource,
-  deleteFilmResource,
-} from '../models/films.js';
-// From the URL GET /film
-export const listFilm = async (request, response, next) => {
+  getAllDirectors,
+  getDirectorsResourceById,
+  createDirectorsResource,
+  updateDirectorsResource,
+  deleteDirectorsResource,
+} from '../models/directors.js';
+// From the URL GET /Directors
+export const listDirector = async (request, response, next) => {
   try {
-    const FilmList = await getAllFilm();
-    return response.status(200).send(FilmList);
+    const DirectorsList = await getAllDirectors();
+    return response.status(200).send(DirectorsList);
   } catch (error) {
     return response.status(500).send({
       message: `Error: connection to database failed, ${error}.`,
@@ -17,38 +17,38 @@ export const listFilm = async (request, response, next) => {
   }
 };
 
-// From the URL GET /Film/:id
-export const getFilmById = async (request, response, next) => {
+// From the URL GET /Directors/:id
+export const getDirectorsById = async (request, response, next) => {
   // URL parameters defined in the router
   const {
     params: { id },
   } = request;
 
   // Call a function that is declared in the resource model
-  const FilmResource = await getFilmResourceById(id);
+  const DirectorsResource = await getDirectorsResourceById(id);
 
-  // If we have a Film resource
-  if (FilmResource) {
+  // If we have a Directors resource
+  if (DirectorsResource) {
     // return resource and 200 OK status
-    return response.status(200).send(FilmResource);
+    return response.status(200).send(DirectorsResource);
   } else {
     // if not sent 404 Resource not found
     return response.status(404).send({
-      message: 'Error: Film resource not found.',
+      message: 'Error: Directors not found.',
     });
   }
 };
 
-// POST /Film with JSON in the body
-export const createFilm = async (request, response) => {
+// POST /Directors with JSON in the body
+export const createDirectors = async (request, response) => {
   // get access to the data sent it by the client
 
   const { body } = request;
 
   try {
     // Call a function that is declared in the resource model
-    const newFilmResource = await createFilmResource(body);
-    return response.status(201).send(newFilmResource);
+    const newDirectorsResource = await createDirectorsResource(body);
+    return response.status(201).send(newDirectorsResource);
   } catch (error) {
     // Because Daytabases can be in other location can't assume that every DB request is succesful
     return response.status(500).send({
@@ -57,8 +57,8 @@ export const createFilm = async (request, response) => {
   }
 };
 
-// From the URL PUT /Film/:id
-export const updateFilmById = async (request, response) => {
+// From the URL PUT /Directors/:id
+export const updateDirectorsById = async (request, response) => {
   // get access to the data sent it by the client
   const {
     params: { id },
@@ -67,8 +67,8 @@ export const updateFilmById = async (request, response) => {
 
   try {
     // Call a function that is declared in the resource model
-    const FilmResource = await updateFilmResource(id, body);
-    return response.status(200).send(FilmResource);
+    const DirectorsResource = await updateDirectorsResource(id, body);
+    return response.status(200).send(DirectorsResource);
   } catch (error) {
     const { message } = error;
     return response.status(404).send({
@@ -77,8 +77,8 @@ export const updateFilmById = async (request, response) => {
   }
 };
 
-// From the URL DELETE /Film/:id
-export const deleteFilmById = async (request, response) => {
+// From the URL DELETE /Directors/:id
+export const deleteDirectorsById = async (request, response) => {
   // get access to the data sent it by the client
   const {
     params: { id },
@@ -86,7 +86,7 @@ export const deleteFilmById = async (request, response) => {
 
   try {
     // Call a function that is declared in the resource model
-    const deleteMessage = await deleteFilmResource(id);
+    const deleteMessage = await deleteDirectorsResource(id);
     return response.status(200).send({
       message: deleteMessage,
     });
