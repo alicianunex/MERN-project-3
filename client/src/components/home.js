@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAllFilm } from '../lib/api';
+import { getAllFilm, deleteFilm } from '../lib/api';
 
 class Home extends React.Component {
   state = {
@@ -8,24 +8,32 @@ class Home extends React.Component {
   };
   onclicked = () => {
     this.setState({ clicked: true });
-    console.log('helloitsme');
   };
-  async componentDidMount() {
+
+  componentDidMount = async () => {
     try {
       const res = await getAllFilm();
-      console.log({ res });
+
       this.setState({ films: res });
-      console.log(res.data);
     } catch (err) {
       console.log(err);
     }
+  };
+
+  async handleDeleteFilm(event) {
+    event.preventDefault();
+    const {
+      currentTarget: { id },
+    } = event;
+    await deleteFilm(id);
   }
+
   render() {
     return (
       <div>
         <div>
           {this.state.films.map((film) => (
-            <div onClick={this.onclicked}>
+            <div onClick={this.onclicked} key={film._id}>
               {this.state.clicked === true && (
                 <div>
                   <h1>{film.title}</h1>
@@ -36,6 +44,9 @@ class Home extends React.Component {
                 </div>
               )}
               <img alt={film.title} className="filmsphoto" src={film.image} />
+              <button onClick={this.handleDeleteFilm} id={film._id}>
+                Delete
+              </button>
             </div>
           ))}
         </div>
