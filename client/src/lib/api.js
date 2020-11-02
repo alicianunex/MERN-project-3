@@ -25,3 +25,15 @@ export const getAllDirectors = async () => {
     return data;
   } catch (error) {}
 };
+
+export const createFilm = async (film) => {
+  const response = await fetch('http://localhost:5000/film', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(film),
+  });
+  const newFilm = await response.json();
+  return newFilm;
+};

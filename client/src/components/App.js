@@ -7,6 +7,10 @@ import Directors from './directors';
 import Footer from './footer.js';
 import '../styles/App.css';
 
+// pages
+
+import NewFilm from '../pages/film/new.js';
+
 class App extends React.Component {
   render() {
     return (
@@ -24,6 +28,7 @@ class App extends React.Component {
 
           <Route exact path="/" component={Home} />
           <Route path="/directors" component={Directors} />
+          <Route path="/film/new" component={NewFilm} />
         </div>
         <Footer></Footer>
       </BrowserRouter>
