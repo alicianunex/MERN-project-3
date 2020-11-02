@@ -2,10 +2,11 @@ import mongoose from 'mongoose';
 
 const DirectorsBody = new mongoose.Schema(
   {
-    Name: String,
-    Born: String,
-    Occupation: String,
-    NotableWork: [String],
+    name: String,
+    born: String,
+    occupation: String,
+    notableWork: [String],
+    image: String,
   },
   {
     timestamps: true,

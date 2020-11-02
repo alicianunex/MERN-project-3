@@ -1,13 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  min-width: auto;
+  display: block;
+  text-align: center;
+  font-size: 100%;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    to right,
+    rgb(64, 122, 155),
+    rgba(116, 197, 193, 0.822)
+  );
+}
+
+a#one:hover {
+  background: rgba(51, 136, 119, 0.521);
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  text-align: center;
+}
+a#two:hover {
+  background: rgba(51, 136, 119, 0.521);
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  text-align: center;
+}
+
+a#two {
+  font-family: 'Roboto Slab', serif;
+  margin: 15px;
+  color: black;
+}
+a#one {
+  font-family: 'Roboto Slab', serif;
+  margin: 15px;
+  color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  grid-area: auto;
+  font-family: 'Quattrocento', serif;
+}
+
+h1 {
+  text-shadow: 0em 0.1em rgba(72, 99, 102, 0.664);
+  /* background-color: rgba(255, 255, 255, 0.555); */
+  /* text-decoration-line: underline; */
+  /* text-decoration-color: rgba(0, 0, 0, 0.596); */
+}
+
+img.filmsphoto {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding-top: 25px;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+}
+
+p.footer {
+  text-align: center;
 }

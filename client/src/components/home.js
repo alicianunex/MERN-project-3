@@ -1,24 +1,20 @@
 import React from 'react';
 import { getAllFilm } from '../lib/api';
 
-// const Home = () => {
-//   return (
-//     <div>
-//       <h1>HOLA</h1>
-//       <p>soy el home </p>
-//     </div>
-//   );
-// };
-//
-
 class Home extends React.Component {
-  state = { film: [] };
-
+  state = {
+    films: [],
+    clicked: false,
+  };
+  onclicked = () => {
+    this.setState({ clicked: true });
+    console.log('helloitsme');
+  };
   async componentDidMount() {
     try {
       const res = await getAllFilm();
       console.log({ res });
-      this.setState({ film: res.data });
+      this.setState({ films: res });
       console.log(res.data);
     } catch (err) {
       console.log(err);
@@ -27,10 +23,20 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <h2>hola</h2>
         <div>
-          {this.state.film.map((film) => (
-            <h1>{film.title}</h1>
+          {this.state.films.map((film) => (
+            <div onClick={this.onclicked}>
+              {this.state.clicked === true && (
+                <div>
+                  <h1>{film.title}</h1>
+                  <h2>{film.director}</h2>
+                  <h3>{film.year}</h3>
+                  <h4>{film.awards}</h4>
+                  <h5>{film.nominations}</h5>
+                </div>
+              )}
+              <img alt={film.title} className="filmsphoto" src={film.image} />
+            </div>
           ))}
         </div>
       </div>

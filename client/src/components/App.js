@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './home.js';
-import Footer from './footer.js';
 import Header from './header.js';
 import Directors from './directors';
+import Footer from './footer.js';
 import '../styles/App.css';
 
 class App extends React.Component {
@@ -14,14 +14,18 @@ class App extends React.Component {
         <div>
           <Header />
           <nav>
-            <Link to="/">Home</Link>
-            <Link to="/directors">Directors</Link>
+            <Link to="/" id="one">
+              INDEX
+            </Link>
+            <Link to="/directors" id="two">
+              DIRECTORS
+            </Link>
           </nav>
 
           <Route exact path="/" component={Home} />
           <Route path="/directors" component={Directors} />
-          <Footer />
         </div>
+        <Footer></Footer>
       </BrowserRouter>
     );
   }

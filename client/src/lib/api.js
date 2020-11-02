@@ -1,7 +1,8 @@
 export const getAllFilm = async () => {
   try {
-    const response = await fetch('/film');
-    const { data } = await response.json();
+    const response = await fetch('http://localhost:5000/film');
+    const data = await response.json();
+    console.log(response);
     return data;
   } catch (error) {
     console.log(error);
@@ -15,4 +16,12 @@ export const getAllFilm = async () => {
   //     }
   //   };
   // };
+};
+export const getAllDirectors = async () => {
+  try {
+    const response = await fetch('http://localhost:5000/director');
+    const data = await response.json();
+    console.log(response);
+    return data;
+  } catch (error) {}
 };

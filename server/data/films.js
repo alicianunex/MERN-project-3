@@ -39,7 +39,8 @@ const films = [
       'Grand Prix (Cannes)🥇',
       'Sitges Film Festival 🏆',
     ],
-    image: 'https://pics.filmaffinity.com/Oldboy-520509097-large.jpg',
+    image:
+      'https://images-na.ssl-images-amazon.com/images/I/51NJwqCywVL._AC_.jpg',
   },
   {
     title: 'ASSASSINATION',
@@ -58,8 +59,7 @@ const films = [
       'Buil Film Awards🏅',
       'The Seoul Awards🇰🇷',
     ],
-    image:
-      'https://pics.filmaffinity.com/The_Spy_Gone_North-103744661-large.jpg',
+    image: 'https://images-na.ssl-images-amazon.com/images/I/51PiGd4PheL.jpg',
   },
   {
     title: 'NEW WORLD',
@@ -74,7 +74,8 @@ const films = [
     year: '2017',
     director: 'Bong Joon-ho (봉준호)',
     nominations: ['Palme D’or 🏅', 'Saturn Awards🥇'],
-    image: 'https://pics.filmaffinity.com/Okja-902722161-large.jpg',
+    image:
+      'https://images-na.ssl-images-amazon.com/images/I/71ENK959usL._AC_SY679_.jpg',
   },
 ];
 
