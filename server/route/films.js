@@ -4,14 +4,12 @@ import {
   getFilmById,
   createFilm,
   updateFilmById,
-  deleteFilmById,
 } from '../controllers/films.js';
 import {
   listDirector,
   getDirectorsById,
   createDirectors,
   updateDirectorsById,
-  deleteDirectorsById,
 } from '../controllers/directors.js';
 
 const filmRouter = express.Router();
@@ -25,7 +23,7 @@ filmRouter.post('/film', createFilm);
 // Update
 filmRouter.put('/film/:id', updateFilmById);
 // Delete
-filmRouter.delete('/film/:id', deleteFilmById);
+// filmRouter.delete('/film/:id', deleteFilmById);
 
 //// Directors
 // List of directors
@@ -37,6 +35,6 @@ filmRouter.post('/director', createDirectors);
 // Update
 filmRouter.put('/director/:id', updateDirectorsById);
 // Delete
-filmRouter.delete('/director/:id', deleteDirectorsById);
+// filmRouter.delete('/director/:id', deleteDirectorsById);
 
 export default filmRouter;
