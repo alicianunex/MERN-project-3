@@ -77,6 +77,17 @@ const films = [
     image:
       'https://images-na.ssl-images-amazon.com/images/I/71ENK959usL._AC_SY679_.jpg',
   },
+  {
+    title: 'The Age of Shadows',
+    year: '2016',
+    director: 'Kim Ji-woon (김지운)',
+    nominations: [
+      'Asian Film Awards 🏅',
+      'Grand Bell Award🥇',
+      'Film Critics Awards🥇',
+    ],
+    image: 'https://de.web.img3.acsta.net/pictures/17/05/17/09/50/192207.jpg',
+  },
 ];
 
 export default films;

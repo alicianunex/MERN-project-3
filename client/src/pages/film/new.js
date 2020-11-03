@@ -26,7 +26,7 @@ const NewFilm = () => {
 
   return (
     <main>
-      <h2>New Film page</h2>
+      <h2 id="title">Add new film</h2>
       <section>
         <form onSubmit={handleOnSubmit}>
           <div>
@@ -39,13 +39,13 @@ const NewFilm = () => {
           </div>
           <div>
             <label htmlFor="director">Director</label>
-            <input id="" name="director" onChange={handleOnChange} />
+            <input id="director" name="director" onChange={handleOnChange} />
           </div>
           <div>
             <label htmlFor="image">Image URL</label>
             <input id="image" name="image" onChange={handleOnChange} />
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit">SUBMIT</button>
         </form>
       </section>
     </main>

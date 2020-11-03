@@ -23,9 +23,9 @@ class Directors extends React.Component {
         <div className="box2">
           {this.state.directors.map((director) => (
             <div>
-              <h1 className="info">{director.name}</h1>
-              <h2 className="info">{director.born}</h2>
-              <h3 className="info">{director.notableWork}</h3>
+              <h1 className="dinfo">{director.name}</h1>
+              <h2 className="dinfo">{director.born}</h2>
+              <h3 className="dinfo">{director.notableWork}</h3>
               <img
                 alt={director.name}
                 className="directorphoto"

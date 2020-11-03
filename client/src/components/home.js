@@ -35,12 +35,20 @@ class Home extends React.Component {
           {this.state.films.map((film) => (
             <div onClick={this.onclicked} key={film._id}>
               {this.state.clicked === true && (
-                <div>
+                <div className="boxinfo">
                   <h1 className="info">{film.title}</h1>
+
                   <h2 className="info">{film.director}</h2>
+
                   <h3 className="info">{film.year}</h3>
-                  <h4 className="info">{film.awards}</h4>
-                  <h5 className="info">{film.nominations}</h5>
+                  <li>
+                    <ul>
+                      <h4 className="info">{film.awards}</h4>
+                    </ul>
+                    <ul>
+                      <h5 className="info">{film.nominations}</h5>
+                    </ul>
+                  </li>
                 </div>
               )}
               <img alt={film.title} className="filmsphoto" src={film.image} />
