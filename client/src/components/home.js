@@ -31,7 +31,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className="box">
+        <div>
           {this.state.films.map((film) => (
             <div onClick={this.onclicked} key={film._id}>
               {this.state.clicked === true && (
