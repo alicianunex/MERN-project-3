@@ -12,5 +12,8 @@
     "client",
     "server"
   ],
-  "private": "true"
+  "private": "true",
+  "scripts": {
+    "start": "yarn workspace server start"
+  }
 }
