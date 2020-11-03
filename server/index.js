@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 import logger from './lib/logger.js';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
 
 //Middleware
 import httpLoggerMiddleware from './middleware/logger-middleware.js';
@@ -11,9 +13,10 @@ import jsonResponseMiddleware from './middleware/json-response.js';
 // Router
 import filmRouter from './route/films.js';
 
-const HOST = '127.0.0.1';
-const PORT = 5000;
-export const databaseURI = 'mongodb://localhost/koreanfilmsdb';
+const HOST = process.env.HOST || '127.0.0.1';
+const PORT = process.env.PORT || 5000;
+export const databaseURI =
+  process.env.DATABASE_URL || 'mongodb://localhost/koreanfilmsdb';
 
 // Creacion del servidor
 const server = express();
