@@ -37,18 +37,10 @@ class Home extends React.Component {
               {this.state.clicked === true && (
                 <div className="boxinfo">
                   <h1 className="info">{film.title}</h1>
-
                   <h2 className="info">{film.director}</h2>
-
                   <h3 className="info">{film.year}</h3>
-                  <li>
-                    <ul>
-                      <h4 className="info">{film.awards}</h4>
-                    </ul>
-                    <ul>
-                      <h5 className="info">{film.nominations}</h5>
-                    </ul>
-                  </li>
+                  <h4 className="info">{film.awards}</h4>
+                  <h5 className="info">{film.nominations}</h5>
                 </div>
               )}
               <img alt={film.title} className="filmsphoto" src={film.image} />
