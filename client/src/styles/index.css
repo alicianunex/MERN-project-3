@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
 
 body {
   min-width: auto;
@@ -40,9 +42,18 @@ a#one {
   color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a#three:hover {
+  background: rgba(51, 136, 119, 0.521);
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  text-align: center;
+}
+
+a#three {
+  font-family: 'Roboto Slab', serif;
+  margin: 15px;
+  color: black;
 }
 
 header {
@@ -52,21 +63,72 @@ header {
 
 h1 {
   text-shadow: 0em 0.1em rgba(72, 99, 102, 0.664);
-  /* background-color: rgba(255, 255, 255, 0.555); */
-  /* text-decoration-line: underline; */
-  /* text-decoration-color: rgba(0, 0, 0, 0.596); */
 }
 
 img.filmsphoto {
-  width: 100%;
+  width: 300px;
   max-width: 300px;
-  text-align: center;
-  padding-top: 25px;
+  /* text-align: center; */
   margin: 20px;
   padding: 10px;
-  float: left;
+  /* float: left; */
+  border-radius: 10px;
 }
-
+img.filmsphoto:hover {
+  background: rgb(220, 233, 230);
+  transition: 0.5s;
+}
 p.footer {
   text-align: center;
+}
+
+button {
+  font-family: 'Josefin Slab', serif;
+  margin: 15px;
+  color: black;
+  background-color: transparent;
+  padding: 6px;
+}
+button:hover {
+  background: rgba(51, 136, 119, 0.521);
+  color: white;
+  transition: 0.1s;
+  padding: 6px;
+  text-align: center;
+}
+/*Directors*/
+
+img.directorphoto {
+  width: 300px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+/*Ordenando en bloque*/
+div.box {
+  border: transparent;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.box2 {
+  border: transparent;
+  margin: 10px;
+  display: inline-flex;
+}
+
+h1.info,
+h2.info,
+h3.info,
+h4.info,
+h5.info {
+  font-size: 20px;
+  font-family: 'Cormorant Upright', serif;
+  color: rgb(173, 236, 253);
+  text-shadow: 0em 0.1em rgb(72, 99, 102);
+  border-color: black;
+}
+
+h1.info {
+  text-decoration-line: underline;
 }

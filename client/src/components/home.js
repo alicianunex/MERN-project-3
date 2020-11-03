@@ -31,21 +31,21 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="box">
           {this.state.films.map((film) => (
             <div onClick={this.onclicked} key={film._id}>
               {this.state.clicked === true && (
                 <div>
-                  <h1>{film.title}</h1>
-                  <h2>{film.director}</h2>
-                  <h3>{film.year}</h3>
-                  <h4>{film.awards}</h4>
-                  <h5>{film.nominations}</h5>
+                  <h1 className="info">{film.title}</h1>
+                  <h2 className="info">{film.director}</h2>
+                  <h3 className="info">{film.year}</h3>
+                  <h4 className="info">{film.awards}</h4>
+                  <h5 className="info">{film.nominations}</h5>
                 </div>
               )}
               <img alt={film.title} className="filmsphoto" src={film.image} />
               <button onClick={this.handleDeleteFilm} id={film._id}>
-                Delete
+                DELETE
               </button>
             </div>
           ))}

@@ -20,14 +20,17 @@ class Directors extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="box2">
           {this.state.directors.map((director) => (
             <div>
-              <h1>{director.name}</h1>
-              <h2>{director.born}</h2>
-              <h3>{director.year}</h3>
-              <h4>{director.awards}</h4>
-              <h5>{director.image}</h5>
+              <h1 className="info">{director.name}</h1>
+              <h2 className="info">{director.born}</h2>
+              <h3 className="info">{director.notableWork}</h3>
+              <img
+                alt={director.name}
+                className="directorphoto"
+                src={director.image}
+              />
             </div>
           ))}
         </div>

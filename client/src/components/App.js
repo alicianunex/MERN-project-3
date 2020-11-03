@@ -24,6 +24,9 @@ class App extends React.Component {
             <Link to="/directors" id="two">
               DIRECTORS
             </Link>
+            <Link to="/film/new" id="three">
+              ADD FILM
+            </Link>
           </nav>
 
           <Route exact path="/" component={Home} />

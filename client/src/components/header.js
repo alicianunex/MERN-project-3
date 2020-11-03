@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <h1>MY FAVOURITE KOREAN FILMS</h1>
-      <p>Add your favourites and check each film detail</p>
+      <p>Add your favorites to the list & Click on the film to see details</p>
     </header>
   );
 };
