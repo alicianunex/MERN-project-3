@@ -30,8 +30,8 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <article>
+        <section className="container">
           {this.state.films.map((film) => (
             <div onClick={this.onclicked} key={film._id}>
               {this.state.clicked === true && (
@@ -49,8 +49,8 @@ class Home extends React.Component {
               </button> */}
             </div>
           ))}
-        </div>
-      </div>
+        </section>
+      </article>
     );
   }
 }

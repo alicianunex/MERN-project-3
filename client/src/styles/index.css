@@ -56,15 +56,6 @@ a#three {
   color: black;
 }
 
-header {
-  grid-area: auto;
-  font-family: 'Quattrocento', serif;
-}
-
-h1 {
-  text-shadow: 0em 0.1em rgba(72, 99, 102, 0.664);
-}
-
 img.filmsphoto {
   width: 300px;
   max-width: 300px;
@@ -168,6 +159,20 @@ h5.dinfo {
 h1.dinfo {
   text-decoration-line: underline;
 }
+img.directorphoto {
+  background: linear-gradient(
+    to left,
+    rgb(64, 122, 155),
+    rgba(116, 197, 193, 0.822)
+  );
+  box-shadow: 4px 6px 20px 0px #182020a8;
+  margin: 2px auto 0;
+  padding: 12px;
+  position: relative;
+  max-height: 50vh;
+  max-width: 100vh;
+}
+
 /*FORM*/
 
 input#title,
@@ -178,7 +183,7 @@ input#image {
   border: none;
   background: none;
   outline: 0;
-  color: rgb(8, 31, 231);
+  color: rgb(255, 255, 255);
   border-bottom: 1px solid black;
   font-family: 'Roboto Slab', serif;
   font-size: 25px;
@@ -196,4 +201,52 @@ h2#title {
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
+}
+
+/*Header*/
+
+header {
+  background-image: url(https://cdn3.iconfinder.com/data/icons/famous-city-skyline/48/Sed-04-512.png);
+  background-size: contain;
+  font-family: 'Konfuciuz';
+  font-size: 15px;
+  color: rgba(238, 238, 238, 0.801);
+}
+h1 {
+  text-shadow: 1px 1px 1px #a1cfd8a6, 1px 2px 1px #5666687e,
+    1px 3px 1px #596161a4, 1px 4px 1px #0d0d0e73, 0px 5px 1px #1b1b1b6e,
+    1px 6px 1px #2b2c2e, 1px 15px 35px rgba(16, 16, 16, 0.2);
+}
+p.sub {
+  text-decoration-line: underline;
+  font-family: 'Cormorant Upright', serif;
+  color: rgb(36, 34, 34);
+}
+/*PHOTOS*/
+
+img.filmsphoto {
+  background: linear-gradient(
+    to left,
+    rgb(64, 122, 155),
+    rgba(116, 197, 193, 0.822)
+  );
+  box-shadow: 4px 6px 20px 0px #182020a8;
+  margin: 2px auto 0;
+  padding: 12px;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2.4rem;
+}
+section.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2.4rem;
+  padding-left: 50px;
 }

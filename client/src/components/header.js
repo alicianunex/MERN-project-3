@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>MY FAVOURITE KOREAN FILMS</h1>
-      <p>Add your favorites to the list & Click on the film to see details</p>
+      <h1>My favourite Korean films</h1>
+      <p className="sub">Click on film to see details</p>
     </header>
   );
 };
