@@ -14,4 +14,15 @@
 ![img](WIREFRAME.png)
 ![img](WIREFRAME2.png)
 
-##### Made with LOVE by ALICIA NÚÑEZ - 2020
+#### HOW TO RUN
+
+* RUN `yarn start`on Client
+* RUN `yarn start`on Server
+* RUN `mongod --dbpathb./db/data`on MONGOD
+
+You will see it on:
+http://localhost:3000 
+
+
+##### Made with LOVE by ALICIA NÚÑEZ - 2020 
+🤍🤍🤍
