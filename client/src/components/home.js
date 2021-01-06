@@ -44,9 +44,11 @@ class Home extends React.Component {
                 </div>
               )}
               <img alt={film.title} className="filmsphoto" src={film.image} />
-              {/* <button onClick={this.handleDeleteFilm} id={film._id}>
-                DELETE
-              </button> */}
+              {
+                <button onClick={this.handleDeleteFilm} id={film._id}>
+                  DELETE
+                </button>
+              }
             </div>
           ))}
         </section>

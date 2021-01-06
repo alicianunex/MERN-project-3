@@ -17,14 +17,14 @@ body {
 }
 
 a#one:hover {
-  background: rgba(51, 136, 119, 0.521);
+  background: rgba(18, 24, 23, 0.521);
   color: white;
   transition: 0.5s;
   padding: 10px;
   text-align: center;
 }
 a#two:hover {
-  background: rgba(51, 136, 119, 0.521);
+  background: rgba(18, 24, 23, 0.521);
   color: white;
   transition: 0.5s;
   padding: 10px;
@@ -43,7 +43,7 @@ a#one {
 }
 
 a#three:hover {
-  background: rgba(51, 136, 119, 0.521);
+  background: rgba(18, 24, 23, 0.521);
   color: white;
   transition: 0.5s;
   padding: 10px;
@@ -83,7 +83,7 @@ button {
   padding: 6px;
 }
 button:hover {
-  background: rgba(51, 136, 119, 0.521);
+  background: rgba(18, 24, 23, 0.521);
   color: white;
   transition: 0.1s;
   padding: 6px;
@@ -104,34 +104,29 @@ div.box {
   flex-wrap: wrap;
 }
 
-div.box2 {
-  border: transparent;
-  margin: 10px;
-  display: inline-flex;
-}
-
-h1.info,
 h2.info,
 h3.info,
 h4.info,
 h5.info {
-  font-size: 20px;
-  font-family: 'Cormorant Upright', serif;
-  color: rgb(173, 236, 253);
-  text-shadow: 0em 0.1em rgb(72, 99, 102);
-  border-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
-  /* width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 4;
-  opacity: 0.8;
-  background-color: rgba(0, 0, 0, 0.082);
-  text-align: center; */
+  color: #131414ce;
+  text-align: center;
+  text-shadow: 1px 1px #000000ad, 3px 3px rgb(64, 122, 155),
+    4px 4px rgb(64, 122, 155), 5px 5px rgba(64, 122, 155, 0.664);
 }
 h1.info {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-decoration-line: underline;
+  color: #cbe7fa;
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px #d5d9dfad, 3px 3px rgb(64, 122, 155),
+    4px 4px rgb(64, 122, 155), 5px 5px rgb(64, 122, 155),
+    6px 6px rgba(64, 122, 155, 0.63), 7px 7px rgba(64, 122, 155, 0.527),
+    8px 8px rgba(64, 122, 155, 0.301), 9px 9px rgba(64, 122, 155, 0.178);
 }
 /* .boxinfo {
   width: 100%;
@@ -144,20 +139,32 @@ h1.info {
 } */
 
 /*directors info*/
-h1.dinfo,
+
 h2.dinfo,
 h3.dinfo,
 h4.dinfo,
 h5.dinfo {
-  font-size: 20px;
-  font-family: 'Cormorant Upright', serif;
-  color: rgb(173, 236, 253);
-  text-shadow: 0em 0.1em rgb(72, 99, 102);
-  border-color: black;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
+  color: #131414ce;
+  text-align: center;
+  text-shadow: 1px 1px #000000ad, 2px 2px rgb(64, 122, 155),
+    3px 3px rgb(64, 122, 155), 4px 4px rgba(64, 122, 155, 0.664);
 }
 h1.dinfo {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-decoration-line: underline;
+  color: #cbe7fa;
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px #d5d9dfad, 3px 3px rgb(64, 122, 155),
+    4px 4px rgb(64, 122, 155), 5px 5px rgb(64, 122, 155),
+    6px 6px rgba(64, 122, 155, 0.63), 7px 7px rgba(64, 122, 155, 0.527),
+    8px 8px rgba(64, 122, 155, 0.301), 9px 9px rgba(64, 122, 155, 0.178);
 }
 img.directorphoto {
   background: linear-gradient(
@@ -169,7 +176,7 @@ img.directorphoto {
   margin: 2px auto 0;
   padding: 12px;
   position: relative;
-  max-height: 50vh;
+  max-height: 22rem;
   max-width: 100vh;
 }
 
@@ -196,11 +203,17 @@ form {
 }
 
 h2#title {
-  color: rgb(173, 236, 253);
-  text-shadow: 0em 0.1em rgb(72, 99, 102);
-  text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
   font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: #cbe7fa;
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px #d5d9dfad, 3px 3px rgb(64, 122, 155),
+    4px 4px rgb(64, 122, 155), 5px 5px rgb(64, 122, 155),
+    6px 6px rgba(64, 122, 155, 0.63), 7px 7px rgba(64, 122, 155, 0.527),
+    8px 8px rgba(64, 122, 155, 0.301), 9px 9px rgba(64, 122, 155, 0.178);
+  text-transform: uppercase;
 }
 
 /*Header*/
@@ -249,4 +262,144 @@ section.container {
   justify-content: center;
   gap: 2.4rem;
   padding-left: 50px;
+}
+
+/*Responsive*/
+
+/* ------------------------------------------------------------------- 
+ * small screens - 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  section.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ------------------------------------------------------------------- 
+ * tablets - 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .container {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .container.filmsphoto {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .info {
+    width: 25%;
+  }
+
+  .box {
+    width: 33.33333%;
+  }
+
+  .box2 {
+    max-width: 300px;
+    display: block;
+    text-align: center;
+  }
+
+  .article {
+    width: 66.66667%;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * large mobile devices 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  section.container {
+    max-width: 300px;
+    display: block;
+    margin-left: -3rem;
+    text-align: center;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * small mobile devices - 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 400px) {
+  .container.filmsphoto {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* ------------------------------------------------------------------- 
+ * small screens - 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  section.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ------------------------------------------------------------------- 
+ * tablets - 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  section.container {
+    max-width: 650px;
+    display: grid;
+    margin-left: rem;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ------------------------------------------------------------------- 
+ * large mobile devices - 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  section.container {
+    max-width: 650px;
+    display: block;
+    text-align: center;
+  }
+  article {
+    margin-left: -2rem;
+  }
+  .boxinfo {
+    padding-left: 10rem;
+  }
+}
+/* ------------------------------------------------------------------- 
+ * stack on small mobile devices -
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 400px) {
+  .stack .bgrid {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+i.icon-arrow-up {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000fd;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background-color: #ffffffb4;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.541);
+  z-index: 99;
+}
+i.icon-arrow-up:hover {
+  background-color: rgba(20, 22, 22, 0.555);
+  color: white;
 }

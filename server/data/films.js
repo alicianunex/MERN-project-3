@@ -28,7 +28,7 @@ const films = [
       'Sitges Film Festival 🏆',
     ],
     image:
-      'https://images-na.ssl-images-amazon.com/images/I/61rUqP3BquL._SL1220_.jpg',
+      'https://i.pinimg.com/originals/88/90/dc/8890dc1ac5ab4b880dd4a0615aa3bc45.jpg',
   },
   {
     title: 'OLDBOY',
